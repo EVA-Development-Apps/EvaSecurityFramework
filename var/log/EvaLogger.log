@@ -1,0 +1,48 @@
+[2022-02-15 16:07:23]	[WARNING]	[EvaExceptionTest.php]	Trying to call THROW_DEFAULT
+[2022-02-15 16:07:23]	[DEFAULT]	[EvaCustomeException.php]	Exception: Default exception #-> 2 is not allowed as a parameter in C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\src\classes\EvaCustomeException.php:21
+Stack trace:
+#0 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\tests\classes\EvaExceptionTest.php(46): EvaCustomeException->__construct(2)
+#1 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(1545): EvaExceptionTest->testCaughtDefaultException()
+#2 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(1151): PHPUnit\Framework\TestCase->runTest()
+#3 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestResult.php(726): PHPUnit\Framework\TestCase->runBare()
+#4 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(903): PHPUnit\Framework\TestResult->run(Object(EvaExceptionTest))
+#5 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestSuite.php(677): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestSuite.php(677): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(670): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\Command.php(143): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#9 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\Command.php(96): PHPUnit\TextUI\Command->run(Array, true)
+#10 phpvfscomposer://C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\phpunit(97): PHPUnit\TextUI\Command::main()
+#11 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\bin\phpunit(105): include('phpvfscomposer:...')
+#12 {main}
+[2022-02-15 16:07:23]	[WARNING]	[EvaExceptionTest.php]	Trying to call THROW_CUSTOM but catch Default
+[2022-02-15 16:07:23]	[DEFAULT]	[EvaCustomeException.php]	EvaException 1001 'Custom exception #-> 1 is an invalid parameter' #--IN--# 'C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\src\classes\EvaCustomeException.php' #--LINE NUMBER--# (16)
+#0 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\tests\classes\EvaExceptionTest.php(70): EvaCustomeException->__construct(1)
+#1 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(1545): EvaExceptionTest->testLogDefaultException()
+#2 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(1151): PHPUnit\Framework\TestCase->runTest()
+#3 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestResult.php(726): PHPUnit\Framework\TestCase->runBare()
+#4 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(903): PHPUnit\Framework\TestResult->run(Object(EvaExceptionTest))
+#5 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestSuite.php(677): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestSuite.php(677): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(670): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\Command.php(143): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#9 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\Command.php(96): PHPUnit\TextUI\Command->run(Array, true)
+#10 phpvfscomposer://C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\phpunit(97): PHPUnit\TextUI\Command::main()
+#11 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\bin\phpunit(105): include('phpvfscomposer:...')
+#12 {main}
+[2022-02-15 16:07:23]	[WARNING]	[EvaExceptionTest.php]	Trying to call THROW_CUSTOM
+[2022-02-15 16:07:23]	[WARNING]	[EvaExceptionTest.php]	1
+[2022-02-15 16:07:23]	[ERROR]	[EvaCustomeException.php]	EvaException 1001 'Custom exception #-> 1 is an invalid parameter' #--IN--# 'C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\src\classes\EvaCustomeException.php' #--LINE NUMBER--# (16)
+#0 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\tests\classes\EvaExceptionTest.php(22): EvaCustomeException->__construct(1)
+#1 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(1545): EvaExceptionTest->testLogEvaCustomeException()
+#2 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(1151): PHPUnit\Framework\TestCase->runTest()
+#3 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestResult.php(726): PHPUnit\Framework\TestCase->runBare()
+#4 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestCase.php(903): PHPUnit\Framework\TestResult->run(Object(EvaExceptionTest))
+#5 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestSuite.php(677): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\Framework\TestSuite.php(677): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(670): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\Command.php(143): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#9 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\src\TextUI\Command.php(96): PHPUnit\TextUI\Command->run(Array, true)
+#10 phpvfscomposer://C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\phpunit\phpunit\phpunit(97): PHPUnit\TextUI\Command::main()
+#11 C:\codeviews\gitcode\frameworks\EvaExceptionLoggingFramework\vendor\bin\phpunit(105): include('phpvfscomposer:...')
+#12 {main}
+[2022-02-15 16:07:23]	[WARNING]	[EvaExceptionTest.php]	Trying to call THROW_NONE
